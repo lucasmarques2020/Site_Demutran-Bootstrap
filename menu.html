@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>DEMUTRAN - MENU</title>
+        <link rel="icon" type="image/x-icon" href="assets/icon/logo.png" />
+        <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.11.0.css" type="text/css" media="all">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="css/style_menu.css" rel="stylesheet" />
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+    </head>
+    <body>
+       
+      <div class = "loading col-md-12">
+        <div class="text-center">
+          <div class = "bolinhas">
+            
+          </div>
+        </div>
+        </div>
+      <div>
+      <div class = "grafico">
+        <canvas id="myChart" class = "chart-grafico"></canvas>
+      </div>
+        
+       
+        <div class = "container-fluid">
+         
+            <div class = "horizontal row">
+                <img src="img/logos/demutran1.png">
+            </div>
+            <div class = "menu container-fluid">
+                <div class = "row">
+                <ul class = "col-md-12">
+                    <li><a class = "dashboard">DASHBOARD</a></li>
+                        <ul class = "dashboard-item">
+                            <li><a>CREDENCIAL</a></li>
+                            <li><a>DEFESA</a></li>
+                            <li><a>PERMISSIONÁRIO</a></li>
+                            <li><a class = "dash_mult">MULTA</a></li>
+                        </ul>
+                    <li><a class = "alvara">ALVARÁ</a></li>
+                        <ul class = "alvara-item">
+                            <li><a>BUSCAR</a></li>
+                            <li><a>CADASTRAR</a></li>
+                            <li><a>ESTATÍSTICA</a></li>
+                        </ul>
+                    <li><a class = "credencial">CREDENCIAL</a></li>
+                        <ul class = "credencial-item">
+                            <li><a>BUSCAR</a></li>
+                            <li><a>CADASTRAR</a></li>
+                            <li><a>ESTATÍSTICA</a></li>
+                        </ul>
+                    <li><a class = "defesa">DEFESA</a></li>
+                        <ul class = "defesa-item">
+                            <li><a>BUSCAR</a></li>
+                            <li><a>CADASTRAR</a></li>
+                            <li><a>ESTATÍSTICA</a></li>
+                        </ul>
+                    <li><a class = "multa">MULTA</a></li>
+                        <ul class = "multa-item">
+                            <li><a>BUSCAR</a></li>
+                            <li><a>CADASTRAR</a></li>
+                            <li><a>DECLARAÇÃO</a></li>
+                            <li class = "upmult"><a>UPLOAD MULTAS</a></li>
+                        </ul>
+                    <li><a class = "permissionario">PERMISSIONÁRIO</a></li>
+                        <ul class = "permissionario-item">
+                            <li class = "bc"><a>BUSCAR</a></li>
+                            <li class = "cat"><a>CADASTRAR</a></li>
+                            <li class = "dec"><a>DECLARAÇÃO</a></li>
+                            <li class = "est"><a>ESTATÍSTICA</a></li>
+                        </ul>
+                        
+                </ul>
+            </div>
+            </div>
+            </div>
+            <div class = "formulario col-md-9">
+              <h1>Cadastro Permissionário</h1>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-10">
+                          <label for="inputEmail4">Nome</label>
+                          <input type="text" class="form-control" id="inputName" placeholder="Nome do Permissionário(a)">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputEmail4">Inscrição</label>
+                            <input type="number" class="form-control" id="inputInsc" placeholder="Inscrição da vaga">
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label for="inputEstado">Categoria</label>
+                            <select id="inputEstado" class="form-control">
+                              <option selected>Escolher...</option>
+                              <option>BUGGY TURISMO</option>
+                              <option>MOTOTÁXI</option>
+                              <option>TÁXI</option>
+                              <option>TRANSPORTE ALTERNATIVO</option>
+                              <option>OUTROS</option>
+                            </select>
+                          </div> 
+                          <div class="form-group col-md-3">
+                            <label for="inputEmail4">CPF Permissionário</label>
+                            <input type="text" class="form-control" id="inputCpfPerm" placeholder="CPF do Permissionário">
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label for="inputPassword4">Registro CNH</label>
+                            <input type="number" class="form-control" id="inputRegNum" placeholder="Número do Registro da CNH">
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label for="inputPassword4">Data CNH</label>
+                            <input type="date" class="form-control" id="inputEndBai">
+                          </div>
+                          
+                      </div>
+          
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label for="inputEmail4">Endereço</label>
+                        <input type="text" class="form-control" id="inputEnd" placeholder="Endereço atualizado">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputPassword4">Número</label>
+                        <input type="number" class="form-control" id="inputEndNum" placeholder="Numero da residência">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputPassword4">Bairro</label>
+                        <input type="text" class="form-control" id="inputEndBai" placeholder="Bairro">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label for="inputCity">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputEstado">Estado</label>
+                        <select id="inputEstado" class="form-control">
+                          <option selected>Escolher...</option>
+                          <option>AC</option>
+                          <option>AL</option>
+                          <option>AP</option>
+                          <option>AM</option>
+                          <option>BA</option>
+                          <option>CE</option>
+                          <option>DF</option>
+                          <option>ES</option>
+                          <option>GO</option>
+                          <option>MA</option>
+                          <option>MT</option>
+                          <option>MS</option>
+                          <option>MG</option>
+                          <option>PA</option>
+                          <option>PB</option>
+                          <option>PR</option>
+                          <option>PE</option>
+                          <option>PI</option>
+                          <option>RJ</option>
+                          <option>RN</option>
+                          <option>RS</option>
+                          <option>RO</option>
+                          <option>RR</option>
+                          <option>SC</option>
+                          <option>SP</option>
+                          <option>SE</option>
+                          <option>TO</option>
+                        </select>
+                      </div> 
+                      <div class="form-group col-md-4">
+                        <label for="inputCEP">CEP</label>
+                        <input type="text" class="form-control" id="inputCEP">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label for="inputEmail4">Nome do Condutor</label>
+                          <input type="text" class="form-control" id="inputNomCond" placeholder="Nome do Condutor">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputEmail4">CPF do Condutor</label>
+                          <input type="text" class="form-control" id="inputCpfPerm" placeholder="CPF do condutor">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">Registro CNH do Condutor</label>
+                          <input type="number" class="form-control" id="inputRegNumCond" placeholder="Número do Registro da CNH do condutor">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">Data CNH</label>
+                          <input type="date" class="form-control" id="inputEndCNHCond">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label for="inputEmail4">Modelo Veículo</label>
+                        <input type="text" class="form-control" id="inputModVeic" placeholder="Modelo Veículo">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputEmail4">Placa do Veículo</label>
+                        <input type="text" class="form-control" id="inputPlacaVeic" placeholder="CPF do condutor">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputPassword4">Ano do Veículo</label>
+                        <input type="text" class="form-control" id="inputAnoVeic" placeholder="Número do Registro da CNH do condutor">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputPassword4">Data do CRLV</label>
+                        <input type="text" class="form-control" id="inputDataCRLV">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Clique em mim
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary">Imprimir</button>
+                  </form>
+            </div>
+        </div>
+        <div class = "buscar col-md-8">
+          <div class="input-group col-md-12">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Campo de busca</span>
+            </div>
+            <input type="text" class="form-control" placeholder="nome, cpf, inscrição...">
+            <div class="input-group-prepend">
+              <input type="submit" class="form-control" id = "buscarBtn"value="Buscar">
+            </div>
+          </div>  
+        </div>
+        <div class = "uploadArquivo col-md-8">
+          <h1>Importar aquivos</h1>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Upload</span>
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01">
+            <label class="custom-file-label" for="inputGroupFile01">Buscar arquivo</label>
+          </div>
+        </div>
+      </div> 
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+      <script src="https://www.jsdelivr.com/package/npm/chart.js?path=dist"></script>
+      <script src="/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+        datasets: [{
+            label: 'Multas 2021',
+            data: [12, 19, 3, 5, 2, 3, 12, 19, 3, 5, 2, 3],
+            borderWidth: 6,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+            <script type="text/javascript" src="js/script.js"></script>
+            <!-- Bootstrap core JS-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js "></script>
+            <!-- Third party plugin JS-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js "></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js "></script>
+            <!-- Core theme JS-->
+    </body>
+</html>
