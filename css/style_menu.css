@@ -16,19 +16,22 @@ body{
     color: rgb(0, 0, 0);
 }
 .menu-lateral a{
+    transition: 0.3s;
     color: rgb(255, 255, 255);
 }
-.menu-lateral a:active{
+.menu-lateral ul li a{
     color: rgb(255, 255, 255);
 }
 .menu-lateral a:hover{
     color: rgb(255, 255, 255);
 }
 .menu-lateral ul li{
-    transition: 0.3s;
+    border-radius: 20px;
 }
 
 .menu-lateral ul li:hover{
+    transition: 0.3s;
+    
     background: rgb(209,130,0);
     background: linear-gradient(90deg, rgba(209,130,0,1) 0%, rgba(251,177,0,1) 50%, rgba(187,129,0,1) 100%);
 }
@@ -61,6 +64,7 @@ body{
     background: rgb(209,130,0);
     background: linear-gradient(90deg, rgba(209,130,0,1) 0%, rgba(251,177,0,1) 50%, rgba(187,129,0,1) 100%);
     transition: 0.2s;
+    border-radius: 20px;
 }
 .card:hover{
     transform: scale(1.1);
@@ -76,5 +80,6 @@ body{
     padding: 20px;
 }
 .MenuUsers h1{
+    margin-bottom: 40px;
     color: white;
 }
