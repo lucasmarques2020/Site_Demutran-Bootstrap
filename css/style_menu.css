@@ -83,3 +83,54 @@ body{
     margin-bottom: 40px;
     color: white;
 }
+.CadastroUsers{
+    padding: 20px;
+}
+.CadastroUsers h1{
+    color: white;
+}
+.CadastroUsers label{
+    font-size: 30px;
+    color:white;
+}
+.CadastroUsers input{
+    color:white;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+.CadastroUsers div form{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.underline{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    background: rgb(209,130,0);
+    background: linear-gradient(90deg, rgba(209,130,0,1) 0%, rgba(251,177,0,1) 50%, rgba(187,129,0,1) 100%);
+}
+.CadastroUsers div form a{
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background: rgb(209,130,0);
+    background: linear-gradient(90deg, rgba(209,130,0,1) 0%, rgba(251,177,0,1) 50%, rgba(187,129,0,1) 100%);
+    transition: 0.2s;
+}
+.CadastroUsers div form a:hover{
+    color: white;
+    font-weight: bold;
+    background: rgb(109, 67, 0);
+    background: linear-gradient(90deg, rgb(109, 67, 0) 0%, rgb(126, 88, 0) 50%, rgb(87, 59, 0) 100%);
+}
